@@ -1,0 +1,24 @@
+HisabMate V4.1 — Red & Black PWA
+================================
+
+এটি এখন PWA (Progressive Web App) হিসেবে প্রস্তুত।
+গুরুত্বপূর্ণ: ফোনে Install অপশন দেখাতে app-টি HTTPS ওয়েবসাইট থেকে খুলতে হবে।
+সরাসরি ZIP-এর index.html file manager থেকে খুললে PWA install/service-worker কাজ নাও করতে পারে।
+
+সবচেয়ে সহজ উপায়: GitHub Pages
+1) github.com-এ একটি নতুন repository তৈরি করুন (যেমন HisabMate)।
+2) এই ZIP-এর ভেতরের index.html, manifest.webmanifest, sw.js এবং icons folder upload করুন।
+3) Repository > Settings > Pages > Deploy from branch > main / root নির্বাচন করুন।
+4) GitHub যে HTTPS link দেবে সেটি Android Chrome-এ খুলুন।
+5) Chrome-এর ⋮ > Add to Home screen / Install app চাপুন।
+6) Home Screen-এর HisabMate icon থেকে অ্যাপের মতো খুলুন।
+
+ডাটা:
+- কোনো Login নেই
+- কোনো Cloud Sync নেই
+- হিসাব এই ডিভাইসের browser storage-এ থাকে
+- Auto Backup local snapshot রাখে
+- Settings থেকে JSON Backup/Restore ব্যবহার করুন
+- Browser data clear করলে local হিসাব মুছে যেতে পারে; তাই JSON backup রাখুন
+
+নোট: PWA install করার পরও data sync হবে না—প্রতিটি ডিভাইস আলাদা থাকবে।
